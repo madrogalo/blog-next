@@ -7,7 +7,7 @@ import { useRouter } from 'next/router'
 
 const Header = () => {
 
-  const [isShowMenu, setIsShowMenu] = useState(true)
+  const [isShowMenu, setIsShowMenu] = useState(false)
   const router = useRouter()
   const goToHome = () => {
     router.push('/')

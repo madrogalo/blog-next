@@ -10,6 +10,37 @@ npm run dev
 yarn dev
 ```
 
+## heroku login
+
+```
+heroku login
+```
+
+## heroku deploy
+
+```
+git push heroku branch_name
+
+```
+
+## Clone the repository
+#### Use Git to clone blog-next2's source code to your local machine.
+
+```
+ heroku git:clone -a blog-next2 
+ cd blog-next2
+```
+## Deploy your changes
+### Make some changes to the code you just cloned and deploy them to Heroku using Git.
+
+```
+ git add .
+ git commit -am "make it better"
+ git push heroku master
+```
+
+---
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
