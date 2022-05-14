@@ -1,0 +1,13 @@
+.card {
+  width: 335px;
+}
+
+.card_text {
+  width: 335px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 120%;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 42px;
+}
