@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { fetchNewsById } from '../utils'
 import { useSelector, useDispatch } from 'react-redux'
@@ -20,7 +20,7 @@ export default function Newspage() {
     <div>
       {oneNews.map(news => (
         <div key={news.id}>
-          <h2>albumId {news.title}</h2>
+          <h1>{news.title}</h1>
           <p>{news.body}</p>
           <p>{news.body}</p>
           <p>{news.body}</p>
