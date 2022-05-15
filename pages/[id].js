@@ -1,27 +1,26 @@
 import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
-import { fetchCarById } from '../utils'
-import Image from 'next/image'
-
+import { fetchNewsById } from '../utils'
+import { useSelector, useDispatch } from 'react-redux'
+import { setOneNews } from '../reducers/oneNews/oneNewsSlice'
 
 export default function Newspage() {
-  const [data, setData] = useState([])
   const router = useRouter()
   const { id } = router.query
 
+  const dispatch = useDispatch()
   useEffect(() => {
-    fetchCarById(id)
-    .then(data => setData(data))
+    fetchNewsById(id)
+    .then(data => dispatch(setOneNews(data)))
   }, [id])
+
+  const oneNews = useSelector((state) => state.oneNews.news)
 
   return(
     <div>
-      {data.map(news => (
+      {oneNews.map(news => (
         <div key={news.id}>
           <h2>albumId {news.title}</h2>
-          <p>{news.body}</p>
-          <p>{news.body}</p>
-          <p>{news.body}</p>
           <p>{news.body}</p>
           <p>{news.body}</p>
           <p>{news.body}</p>
