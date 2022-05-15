@@ -21,7 +21,7 @@ export default function Home() {
             key={news.id}
             pageId={news.id}
             title={news.title}
-            urlImg={news.url}
+            body={news.body}
           />
         ))
       }

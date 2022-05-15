@@ -1,13 +1,22 @@
 .card {
   width: 335px;
+  margin-top: 35px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid grey;
 }
 
-.card_text {
+.card_title {
   width: 335px;
   font-weight: 500;
   font-size: 22px;
   line-height: 120%;
   text-align: center;
   color: #000000;
-  margin-bottom: 42px;
+  margin-bottom: 10px;
+}
+
+.card_body {
+  width: 335px;
+  font-size: 12px;
+  text-align: center;
 }
