@@ -18,10 +18,16 @@ export default function Newspage() {
     <div>
       {data.map(news => (
         <div key={news.id}>
-          <h1>Id {news.id}</h1>
-          <h2>albumId {news.albumId}</h2>
-          <Image width={300} height={300} src={news.url} alt={news.id}/>
-          <p>{news.title}</p>
+          <h2>albumId {news.title}</h2>
+          <p>{news.body}</p>
+          <p>{news.body}</p>
+          <p>{news.body}</p>
+          <p>{news.body}</p>
+          <p>{news.body}</p>
+          <p>{news.body}</p>
+          <p>{news.body}</p>
+          <p>{news.body}</p>
+          <p>{news.body}</p>
         </div>
       ))}
     </div>
