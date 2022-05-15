@@ -1,22 +1,23 @@
 import { useEffect, useState } from 'react'
 import Card from '../components/card'
-import { fetchCars } from '../utils'
-
+import { fetchNews } from '../utils'
+import { useSelector, useDispatch } from 'react-redux'
+import { setNews } from '../reducers/news/newsSlice'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
-  
-  const [listNews, setListNews] = useState([])
+  const newsList = useSelector((state) => state.news.news)
+  const dispatch = useDispatch()
 
   useEffect(() => {
-    fetchCars(1)
-    .then(data => setListNews(data))
+    fetchNews(1)
+    .then(data => dispatch(setNews(data)))
   }, [])
+
   return (
     <div className={styles.main_page}>
-
       {
-        listNews.map(news => (
+        newsList.map(news => (
           <Card
             key={news.id}
             pageId={news.id}
