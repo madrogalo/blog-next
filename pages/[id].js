@@ -12,7 +12,7 @@ export default function Newspage() {
   useEffect(() => {
     fetchNewsById(id)
     .then(data => dispatch(setOneNews(data)))
-  }, [id])
+  }, [])
 
   const oneNews = useSelector((state) => state.oneNews.news)
 
