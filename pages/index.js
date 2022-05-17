@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import Card from '../components/card'
 import { fetchNews } from '../utils'
 import { useSelector, useDispatch } from 'react-redux'
