@@ -52,6 +52,11 @@ const Header = () => {
               Project
             </Link>
           </div>
+          <div className={styles.menu_list_item}>
+            <Link href='/order'>
+              Order
+            </Link>
+          </div>
         </div>)
       }
     </>
