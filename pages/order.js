@@ -1,7 +1,7 @@
 import React, { useReducer, useState } from 'react'
 import {postOrderData} from '../utils'
 
-export default function order() {
+export default function Order() {
   const initValues = {
     name: '',
     tel: '',
